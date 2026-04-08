@@ -1,0 +1,125 @@
+Project: Swamp Fox Command Center
+Build a full internal dashboard for Swamp Fox Agency, a commercial insurance agency specializing in trucking and logging risks (Moncks Corner, SC).
+
+Tech Stack
+Frontend: React + TypeScript, scaffolded with Vite
+Styling: Tailwind CSS
+Charts/Visuals: Power BI Embedded (powerbi-client + powerbi-client-react)
+Auth: Mock token service now, wire to Azure AD (service principal) later
+Deployment: Local intranet (localhost dev, production via IIS or local Node server)
+Branding — match swampfoxagency.com exactly
+Primary accent: #2ea3f2 (bright blue)
+Dark base: #2d3940 (dark blue-gray)
+Headings: #333333
+Body text: #666666
+Main background: #ffffff
+Panel/alternate background: #f3f3f3
+Dividers/borders: #e2e2e2
+Font: Inter or clean sans-serif
+File Structure — Feature-based
+
+swamp-fox-command-center/
+  src/
+    features/
+      dashboard/        ← Home/Overview: KPI tiles, high-level metrics
+      policies/         ← Active policies, renewals, lapsed accounts
+      claims/           ← Open claims, loss ratios, trends
+      drivers/          ← Driver records (heavy auto liability / trucking focus)
+    components/         ← Shared UI (Sidebar, TopBar, Layout)
+    services/
+      auth.ts           ← Mock token service (stub Azure AD later)
+      powerbi.ts        ← Power BI embed config stub
+    hooks/
+    context/
+      AuthContext.tsx
+    types/
+    App.tsx
+    main.tsx
+Pages (4 at launch)
+Home / Overview — KPI summary tiles
+Policies — Active policies, renewals due, lapsed
+Claims — Open claims, loss ratios, trends
+Drivers — Driver records and auto liability metrics (trucking/auto liability is a core book)
+Power BI Integration
+Now: Styled placeholder panels (no real embed yet)
+Later: Wire in real workspace/report IDs and embed tokens via Power BI REST API + Azure AD service principal
+Data Source
+All data lives in Microsoft Fabric, surfaced through Power BI Embedded via the Power BI REST API.
+
+Project Location
+C:\Users\Bensa\OneDrive\Desktop\Claude Coworker\Code\ — create swamp-fox-command-center\ as a new folder here. (Note: Workspace in that folder is a VS Code .code-workspace file, not a directory — don't put the project inside it, add it alongside.)
+
+Sources:
+
+Swamp Fox Agency
+no we use green
+Web Fetchhttps://swampfoxagency.com/
+Fetched from https://swampfoxagency.com/
+Web Fetchhttps://swampfoxagency.com/about/
+Fetched from https://swampfoxagency.com/about/
+Found it. The real brand color is #015d43 — deep forest green, used on navigation and buttons throughout the site. Very on-brand for "Swamp Fox." Here's the corrected color palette:
+
+Primary brand green: #015d43 (deep forest green — nav, buttons)
+Dark base: #2d3940
+Headings: #333333
+Body text: #666666
+Main background: #ffffff
+Panel background: #f3f3f3
+Borders/dividers: #e2e2e2
+Updated full briefing:
+
+Project: Swamp Fox Command Center
+Build a full internal dashboard for Swamp Fox Agency, a commercial insurance agency specializing in trucking and logging risks (Moncks Corner, SC).
+
+Tech Stack
+Frontend: React + TypeScript, scaffolded with Vite
+Styling: Tailwind CSS
+Charts/Visuals: Power BI Embedded (powerbi-client + powerbi-client-react)
+Auth: Mock token service now, wire to Azure AD (service principal) later
+Deployment: Local intranet (localhost dev, production via IIS or local Node server)
+Branding — match swampfoxagency.com
+Primary: #015d43 (deep forest green — primary brand color)
+Dark base: #2d3940 (dark blue-gray)
+Headings: #333333
+Body text: #666666
+Main background: #ffffff
+Panel/alternate background: #f3f3f3
+Dividers: #e2e2e2
+Font: Inter or clean sans-serif
+File Structure — Feature-based
+
+swamp-fox-command-center/
+  src/
+    features/
+      dashboard/        ← Home/Overview: KPI tiles, high-level metrics
+      policies/         ← Active policies, renewals, lapsed accounts
+      claims/           ← Open claims, loss ratios, trends
+      drivers/          ← Driver records (heavy auto liability / trucking focus)
+    components/         ← Shared UI (Sidebar, TopBar, Layout)
+    services/
+      auth.ts           ← Mock token service (stub Azure AD later)
+      powerbi.ts        ← Power BI embed config stub
+    hooks/
+    context/
+      AuthContext.tsx
+    types/
+    App.tsx
+    main.tsx
+Pages (4 at launch)
+Home / Overview — KPI summary tiles
+Policies — Active policies, renewals due, lapsed
+Claims — Open claims, loss ratios, trends
+Drivers — Driver records and auto liability metrics (trucking/auto liability is a core book)
+Power BI Integration
+Now: Styled placeholder panels (no real embed yet)
+Later: Wire in real workspace/report IDs and embed tokens via Power BI REST API + Azure AD service principal
+Data Source
+All data lives in Microsoft Fabric, surfaced through Power BI Embedded via the Power BI REST API.
+
+Project Location
+C:\Users\Bensa\OneDrive\Desktop\Claude Coworker\Code\ — create swamp-fox-command-center\ as a new folder here. (Workspace in that folder is a VS Code .code-workspace file — add the project alongside it, not inside it.)
+
+Sources:
+
+Swamp Fox Agency
+About - Swamp Fox Agency
